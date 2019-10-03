@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import TodoForm from './components/TodoForm'
 import TodoList from './components/TodoList'
@@ -9,7 +8,9 @@ function App(props) {
     <div className="App">
       <header className="App-header">
         <div className="Todo-App">
-          <TodoForm />
+          <TodoForm 
+            currentTodo={props.currentTodo}
+            changeCurrent={props.changeCurrent}/>
           <TodoList todos={props.todos} />
         </div>
       </header>
