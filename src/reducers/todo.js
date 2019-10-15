@@ -4,7 +4,7 @@ const initState = {
 		{id: 2, name: 'Render initial state', isComplete: true},
 		{id: 3, name: 'Render based on state', isComplete: false},
 	],
-	currentTodo: ''
+	currentTodo: 'fuk'
 };
 
 const CURRENT_UPDATE = 'CURRENT_UPDATE';

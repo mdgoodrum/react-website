@@ -1,7 +1,9 @@
 import React from 'react';
+import { connect } from 'react-redux'
 import './App.css';
 import TodoForm from './components/TodoForm'
 import TodoList from './components/TodoList'
+import { updateCurrent } from './reducers/todo'
 
 function App(props) {
   return (
@@ -10,7 +12,7 @@ function App(props) {
         <div className="Todo-App">
           <TodoForm 
             currentTodo={props.currentTodo}
-            changeCurrent={props.changeCurrent}/>
+            changeCurrent={props.updateCurrent}/>
           <TodoList todos={props.todos} />
         </div>
       </header>
@@ -18,4 +20,9 @@ function App(props) {
   );
 }
 
-export default App;
+// export default App;
+
+const mapDispatchToProps = { updateCurrent }
+const mapStateToProps = (state) => state
+const ConnectedApp = connect(mapStateToProps, mapDispatchToProps)(App)
+export default ConnectedApp
