@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "configure server",
-      "isComplete": true
+      "isComplete": false
     },
     {
       "id": 2,
@@ -16,28 +16,18 @@
       "isComplete": false
     },
     {
-      "id": 4,
-      "name": "Add records",
-      "isComplete": false
-    },
-    {
       "id": 5,
       "name": "update records",
       "isComplete": false
     },
     {
-      "name": "fuk",
-      "isComplete": false,
-      "id": 6
-    },
-    {
       "name": "asdf",
-      "isComplete": false,
+      "isComplete": true,
       "id": 7
     },
     {
       "name": "test",
-      "isComplete": false,
+      "isComplete": true,
       "id": 8
     }
   ]
